@@ -9,9 +9,20 @@ import java.net.http.HttpResponse;
 
 public class PokemonStats {
 	
-	private PokemonSearchResponse pokeStatsResp = new PokemonSearchResponse();
+	private String pokemonName;
 	
-	HttpClient httpClient = HttpClient.newHttpClient();
+	public PokemonStats() {
+		super();
+	}
+	
+	public PokemonStats(String pokemonName) {
+		super();
+		this.pokemonName = pokemonName;
+	}
+	
+//	private PokemonSearchResponse pokeStatsResp = new PokemonSearchResponse();
+	
+/*	HttpClient httpClient = HttpClient.newHttpClient();
     HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("https://pokeapi.co")).build();
 
@@ -22,6 +33,6 @@ public class PokemonStats {
     } catch (Exception e) {
         e.printStackTrace();
     }
-}
+}*/
 
 }
